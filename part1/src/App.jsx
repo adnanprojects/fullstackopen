@@ -1,4 +1,4 @@
-import './App.css'
+import './App.css';
 
 function App() {
   const now = new Date();
@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       <div>
-        <p>Hello world, it is {now.toDateString()}</p>
+        <p>Hello Nishat, it is {now.toDateString()}</p>
         <p>{a} plus {b} is {a + b}</p>
       </div>
     </>
