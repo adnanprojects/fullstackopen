@@ -1,18 +1,18 @@
 function App() {
 
   const Header = (props) => {
-    console.log(props);
+    console.log(props, 'header');
     return <h1>{props.course}</h1>;
   }
 
-  const Content = (parts) => {
-    console.log(parts);
-    return <>{parts.map(item => item.name)}</>
+  const Content = (props) => {
+    console.log(props, 'content');
+    return <>{props.parts[1].name}</>
   }
 
-  const Total = (parts) => {
-    console.log(parts);
-    return <>{parts.map(item => item.exercises)}</>
+  const Total = (props) => {
+    console.log(props, 'total');
+    return <>{props.parts[2].exercises}</>
   }
 
   const course = 'Half Stack application development'
