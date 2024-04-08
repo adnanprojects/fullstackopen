@@ -7,12 +7,20 @@ function App() {
 
   const Content = (props) => {
     console.log(props, 'content');
-    return <>{props.parts[1].name}</>
+    return <>
+      <p>{props.parts[0].name}</p>
+      <p>{props.parts[1].name}</p>
+      <p>{props.parts[2].name}</p>
+    </>
   }
 
   const Total = (props) => {
     console.log(props, 'total');
-    return <>{props.parts[2].exercises}</>
+    return <>
+      <p>{props.parts[0].exercises}</p>
+      <p>{props.parts[1].exercises}</p>
+      <p>{props.parts[2].exercises}</p>
+    </>
   }
 
   const course = 'Half Stack application development'
