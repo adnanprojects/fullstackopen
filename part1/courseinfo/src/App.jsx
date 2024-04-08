@@ -1,5 +1,20 @@
 function App() {
 
+  const Header = (props) => {
+    console.log(props);
+    return <h1>{props.course}</h1>;
+  }
+
+  const Content = (parts) => {
+    console.log(parts);
+    return <>{parts.map(item => item.name)}</>
+  }
+
+  const Total = (parts) => {
+    console.log(parts);
+    return <>{parts.map(item => item.exercises)}</>
+  }
+
   const course = 'Half Stack application development'
   const parts = [
     {
@@ -14,13 +29,13 @@ function App() {
       name: 'State of a component',
       exercises: 14
     }
-  ]
+  ];
 
   return (
     <>
       <Header course={course} />
-      <Content />
-      <Total />
+      <Content parts={parts} />
+      <Total parts={parts} />
     </>
   )
 }
