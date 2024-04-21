@@ -1,5 +1,6 @@
 import { useState } from 'react';
 
+// Statistics
 const Statistics = (props) => {
   const { good, neutal, bad } = props;
   return (
