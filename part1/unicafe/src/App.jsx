@@ -38,6 +38,7 @@ const App = () => {
     <>
       <h1>give feedback</h1>
 
+      {/* This is onClick event handler */}
       <button onClick={handleGood}>good</button>
       <button onClick={handleNeutarl}>neural</button>
       <button onClick={handleBad}>bad</button>
